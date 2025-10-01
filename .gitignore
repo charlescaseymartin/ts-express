@@ -6,6 +6,9 @@
 # Dependencies
 /node_modules
 
+# Package-lock
+package-*
+
 # TypeScript build output
 /dist
 
