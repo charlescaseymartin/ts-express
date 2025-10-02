@@ -42,7 +42,10 @@
     "vitest": "^3.2.4"
   },
   "imports": {
-    "#*": "./src/*"
+    "#*": {
+      "dev-imports": "./src/*",
+      "default": "./dist/*"
+    }
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [

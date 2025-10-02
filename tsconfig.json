@@ -2,7 +2,10 @@
   "extends": "@tsconfig/node22/tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "rootDir": "./"
+    "rootDir": "./src",
+    "customConditions": ["dev-imports"],
+    "resolveJsonModule": true,
+    "resolvePackageJsonImports": true
   },
   "include": ["src/**/*"]
 }
