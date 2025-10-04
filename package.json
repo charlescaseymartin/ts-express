@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx --watch --env-file .env src/index.ts",
-    "start": "node --env-file .env dist/index.js",
+    "start": "node --conditions=production --env-file .env dist/index.js",
     "build": "tsc -p tsconfig.build.json",
     "type-check": "tsc --noEmit",
     "lint": "eslint .",
@@ -43,8 +43,8 @@
   },
   "imports": {
     "#*": {
-      "dev-imports": "./src/*",
-      "default": "./dist/*"
+      "production": "./dist/*",
+      "default": "./src/*"
     }
   },
   "lint-staged": {

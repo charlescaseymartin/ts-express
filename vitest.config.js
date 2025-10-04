@@ -1,7 +1,3 @@
 import { defineConfig } from "vitest/config";
 
-export default defineConfig({
-  resolve: {
-    conditions: ["dev-imports"],
-  },
-});
+export default defineConfig({});
